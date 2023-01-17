@@ -6,11 +6,11 @@
 
 
 int main() {
-    int n, result = 0, min = 100000000 , cur;
+    int n, result = 0, min, cur;
     scanf("%d", &n);
-    int* arr = (int*)malloc(sizeof(int) * n-1); // 도로 길이
+    int arr[100000];
 
-    for (int i = 0; i < n-1; i++) { // 도로 길이
+    for (int i = 0; i < n-1; i++) {
         scanf("%d", &arr[i]);
     }
 
